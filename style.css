@@ -1,0 +1,129 @@
+body {
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+  background: url(images/bg-intro-mobile.png);
+  background-repeat: no-repeat;
+  background-color: #ff7a7a;
+  display: -ms-grid;
+  display: grid;
+}
+
+.header {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.header .header__title {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.header .header__text {
+  line-height: 1.7;
+}
+
+.main__textbox {
+  text-align: center;
+  margin: 30px auto;
+  width: 327px;
+  height: 88px;
+  background-color: #6055a5;
+  border-radius: 10px;
+}
+
+.main__text {
+  padding: 20px 50px;
+}
+
+.main__text span {
+  font-weight: 700;
+}
+
+.form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+  padding-top: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  height: 442px;
+  width: 327px;
+}
+
+.form .form__input {
+  height: 56px;
+  width: 270px;
+  margin: 10px;
+  border-radius: 7px;
+  border: 1px solid #b9b6d3;
+}
+
+.form .form__input::-webkit-input-placeholder {
+  color: #3e3c49;
+  font-weight: 500;
+  padding: .1rem 1rem;
+}
+
+.form .form__input:-ms-input-placeholder {
+  color: #3e3c49;
+  font-weight: 500;
+  padding: .1rem 1rem;
+}
+
+.form .form__input::-ms-input-placeholder {
+  color: #3e3c49;
+  font-weight: 500;
+  padding: .1rem 1rem;
+}
+
+.form .form__input::placeholder {
+  color: #3e3c49;
+  font-weight: 500;
+  padding: .1rem 1rem;
+}
+
+.form .form__input:focus {
+  border: 1px solid #6055a5;
+  border-radius: 7px;
+}
+
+.form .form__submit {
+  margin-top: 10px;
+  width: 279px;
+  height: 56px;
+  border-radius: 10px;
+  border: 1px solid #38cc8c;
+  background-color: #38cc8c;
+  color: #fff;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+
+.form .form__text {
+  color: #b9b6d3;
+  font-size: 11px;
+  margin: 10px 40px;
+  text-align: center;
+}
+
+.form span {
+  color: #ff7a7a;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+/*# sourceMappingURL=style.css.map */

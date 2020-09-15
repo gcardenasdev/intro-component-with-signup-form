@@ -1,0 +1,124 @@
+// COLORS
+
+$red: hsl(0, 100%, 74%);
+$green: hsl(154, 59%, 51%);
+$blue: hsl(248, 32%, 49%);
+$darkBlue: hsl(249, 10%, 26%) ;
+$grayishBlue: hsl(246, 25%, 77%);
+
+// FONT
+
+$font:'Poppins', sans-serif;
+
+
+// BODY 
+
+body {
+    font-family: $font;
+    color: #fff;
+    background: url(images/bg-intro-mobile.png);
+    background-repeat: no-repeat;
+    background-color: $red;
+    display: grid;
+}
+
+// Header
+
+.header {
+
+    text-align: center;
+    margin-top: 50px;
+
+    .header__title {
+        font-size: 28px;
+        font-weight: 700;
+        
+    }
+
+    .header__text {
+        line-height: 1.7;
+    }
+    
+
+}
+
+// MAIN
+
+.main__textbox {
+    text-align: center;
+    margin: 30px auto;
+    width: 327px;
+    height: 88px;
+    background-color: $blue;
+    border-radius: 10px;;
+}
+
+.main__text {
+    padding: 20px 50px;
+
+    span {
+        font-weight: 700;
+    }
+}
+
+// Form
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    padding-top: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    height: 442px;
+    width: 327px;
+
+    .form__input {
+        height: 56px;
+        width: 270px;
+        margin: 10px;
+        border-radius: 7px;
+        border: 1px solid $grayishBlue;
+    }
+
+    .form__input::placeholder {
+        color: $darkBlue;
+        font-weight: 500;
+        padding: .1rem 1rem;
+    }
+
+    .form__input:focus {
+        border: 1px solid $blue;
+        border-radius: 7px;
+    }
+
+    .form__submit {
+        margin-top: 10px;
+        width: 279px;
+        height: 56px;
+        border-radius: 10px;
+        border: 1px solid $green;
+        background-color: $green;
+        color: #fff;
+        font-size: 15px;
+        text-transform: uppercase;
+    }
+
+    .form__text {
+        color: $grayishBlue;
+        font-size: 11px;
+        margin: 10px 40px;
+        text-align: center;
+    }
+
+    span {
+        color: $red;
+    }
+}
+
+
+
+// Footer
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
