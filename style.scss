@@ -10,6 +10,12 @@ $grayishBlue: hsl(246, 25%, 77%);
 
 $font:'Poppins', sans-serif;
 
+// MIXINS
+
+@mixin box-shadow {
+    box-shadow: 0 10px 0 -3px rgba(62, 60, 73, 0.3);
+}
+
 
 // BODY 
 
@@ -50,7 +56,8 @@ body {
     width: 327px;
     height: 88px;
     background-color: $blue;
-    border-radius: 10px;;
+    border-radius: 10px;
+    @include box-shadow();
 }
 
 .main__text {
@@ -73,6 +80,7 @@ body {
     border-radius: 10px;
     height: 442px;
     width: 327px;
+    @include box-shadow();
 
     .form__input {
         height: 56px;
@@ -103,6 +111,12 @@ body {
         color: #fff;
         font-size: 15px;
         text-transform: uppercase;
+        border-bottom: 3px solid hsl(154, 59%, 40%);
+        transition: background-color 0.3s linear;
+    }
+
+    .form__submit:hover {
+        background-color: hsl(154, 59%, 65%);
     }
 
     .form__text {
@@ -120,5 +134,26 @@ body {
 
 
 // Footer
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+footer {
+    margin-top: 20px;
+}
+
+.attribution {
+     font-size: 11px; text-align: center; 
+    }
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+
+@media only screen and (min-width: 76.25em){
+
+body {
+
+    background-image: url(images/bg-intro-desktop.png);
+    display: grid;
+    
+
+}
+
+}
