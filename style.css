@@ -7,7 +7,7 @@ body {
   font-family: "Poppins", sans-serif;
   color: #fff;
   background: url(images/bg-intro-mobile.png);
-  background-repeat: no-repeat;
+  background-size: auto;
   background-position: center;
   background-color: #ff7a7a;
   display: -ms-grid;
@@ -62,7 +62,6 @@ body {
   padding-top: 20px;
   background-color: #fff;
   border-radius: 10px;
-  height: 442px;
   width: 327px;
   -webkit-box-shadow: 0 10px 0 -3px rgba(62, 60, 73, 0.3);
           box-shadow: 0 10px 0 -3px rgba(62, 60, 73, 0.3);
@@ -78,29 +77,63 @@ body {
   outline: none;
 }
 
-.form .form__input::-webkit-input-placeholder {
+.form::-webkit-input-placeholder {
   color: #3e3c49;
   font-weight: 500;
 }
 
-.form .form__input:-ms-input-placeholder {
+.form:-ms-input-placeholder {
   color: #3e3c49;
   font-weight: 500;
 }
 
-.form .form__input::-ms-input-placeholder {
+.form::-ms-input-placeholder {
   color: #3e3c49;
   font-weight: 500;
 }
 
-.form .form__input::placeholder {
+.form::placeholder {
   color: #3e3c49;
   font-weight: 500;
 }
 
-.form .form__input:focus {
+.form:focus {
   border: 1px solid #6055a5;
   border-radius: 7px;
+  outline: none;
+}
+
+.form .error {
+  background: url(images/icon-error.svg) no-repeat;
+  background-position: 95%;
+  border: 2px solid #ff7a7a;
+}
+
+.form .error::-webkit-input-placeholder {
+  color: #ff7a7a;
+}
+
+.form .error:-ms-input-placeholder {
+  color: #ff7a7a;
+}
+
+.form .error::-ms-input-placeholder {
+  color: #ff7a7a;
+}
+
+.form .error::placeholder {
+  color: #ff7a7a;
+}
+
+.form .error-msg {
+  color: #ff7a7a;
+  font-size: 11px;
+  display: block;
+  text-align: right;
+  position: relative;
+  bottom: 10px;
+  right: 10px;
+  font-style: italic;
 }
 
 .form .form__submit {
@@ -120,6 +153,10 @@ body {
 
 .form .form__submit:hover {
   background-color: #71daad;
+}
+
+.form .form__submit:focus {
+  outline: none;
 }
 
 .form .form__text {
@@ -189,10 +226,15 @@ footer {
   }
   .form {
     width: 540px;
-    height: 474px;
   }
   .form .form__input {
     width: 460px;
+  }
+  .form .form__img {
+    position: relative;
+    top: -45px;
+    left: 195px;
+    visibility: hidden;
   }
   .form .form__submit {
     width: 460px;

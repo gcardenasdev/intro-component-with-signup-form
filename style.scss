@@ -27,7 +27,7 @@ body {
     font-family: $font;
     color: #fff;
     background: url(images/bg-intro-mobile.png);
-    background-repeat: no-repeat;
+    background-size: auto;
     background-position: center;
     background-color: $red;
     display: grid;
@@ -83,7 +83,7 @@ body {
     padding-top: 20px;
     background-color: #fff;
     border-radius: 10px;
-    height: 442px;
+    // height: 442px;
     width: 327px;
     @include box-shadow();
 
@@ -97,16 +97,40 @@ body {
         outline: none;
     }
 
-    .form__input::placeholder {
+    &::placeholder {
         color: $darkBlue;
         font-weight: 500;
         
     }
 
-    .form__input:focus {
+    &:focus {
         border: 1px solid $blue;
         border-radius: 7px;
+        outline: none;
     }
+
+    .error {
+        background: url(images/icon-error.svg) no-repeat;
+        background-position: 95%;
+        border: 2px solid $red;
+    
+    }
+
+    .error::placeholder {
+        color: $red;
+    }
+    
+    .error-msg {
+        color: $red;
+        font-size: 11px;
+        display: block;
+        text-align: right;
+        position: relative;
+        bottom: 10px;
+        right: 10px;
+        font-style: italic;
+    }
+
 
     .form__submit {
         margin-top: 10px;
@@ -126,6 +150,10 @@ body {
         background-color: hsl(154, 59%, 65%);
     }
 
+    .form__submit:focus {
+        outline: none;
+    }
+
     .form__text {
         color: $grayishBlue;
         font-size: 11px;
@@ -137,6 +165,8 @@ body {
         color: $red;
     }
 }
+
+
 
 
 
@@ -196,10 +226,17 @@ footer {
 
 .form {
     width: 540px;
-    height: 474px;
+    // height: 474px;
 
     .form__input {
         width: 460px;
+    }
+
+    .form__img {
+        position: relative;
+        top: -45px;
+        left: 195px;
+        visibility: hidden;
     }
 
     .form__submit {
