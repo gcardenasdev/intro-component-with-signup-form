@@ -38,10 +38,10 @@ body {
 .header {
 
     text-align: center;
-    margin-top: 50px;
+    margin-top: 3.125rem;
 
     .header__title {
-        font-size: 28px;
+        font-size: 1.750em;
         font-weight: 700;
         
     }
@@ -57,8 +57,8 @@ body {
 
 .main__textbox {
     text-align: center;
-    margin: 30px auto;
-    width: 327px;
+    margin: 1.875rem auto;
+    width: 92%;
     height: 88px;
     background-color: $blue;
     border-radius: 10px;
@@ -66,7 +66,7 @@ body {
 }
 
 .main__text {
-    padding: 20px 50px;
+    padding: 1.25rem 3.125rem;
 
     span {
         font-weight: 700;
@@ -80,7 +80,7 @@ body {
     flex-direction: column;
     align-items: center;
     margin: 0 auto;
-    padding-top: 20px;
+    padding-top: 1.25rem;
     background-color: #fff;
     border-radius: 10px;
     // height: 442px;
@@ -90,8 +90,8 @@ body {
     .form__input {
         height: 56px;
         width: 270px;
-        margin: 10px;
-        padding-left: 20px;
+        margin: 0.625rem;
+        padding-left: 1.25rem;
         border-radius: 7px;
         border: 1px solid $grayishBlue;
         outline: none;
@@ -122,7 +122,7 @@ body {
     
     .error-msg {
         color: $red;
-        font-size: 11px;
+        font-size: 0.688em;
         display: block;
         text-align: right;
         position: relative;
@@ -133,14 +133,14 @@ body {
 
 
     .form__submit {
-        margin-top: 10px;
+        margin-top: 0.625rem;
         width: 279px;
         height: 56px;
         border-radius: 10px;
         border: 1px solid $green;
         background-color: $green;
         color: #fff;
-        font-size: 15px;
+        font-size: 0.938em;
         text-transform: uppercase;
         border-bottom: 3px solid hsl(154, 59%, 40%);
         transition: background-color 0.3s linear;
@@ -156,8 +156,8 @@ body {
 
     .form__text {
         color: $grayishBlue;
-        font-size: 11px;
-        margin: 10px 40px;
+        font-size: 0.688em;
+        margin: 0.625rem 2.5rem;
         text-align: center;
     }
 
@@ -172,11 +172,12 @@ body {
 
 // Footer
 footer {
-    margin-top: 20px;
+    margin-top: 1.25rem;
 }
 
 .attribution {
-     font-size: 11px; text-align: center; 
+     font-size: 0.688em; 
+     text-align: center; 
     }
 .attribution a { 
     color: hsl(228, 45%, 44%); 
@@ -203,10 +204,10 @@ body {
 .header {
     grid-area: header;
     text-align: left;
-    margin: 180px 60px;
+    margin: 11.25rem 3.75rem;
 
     .header__title {
-        font-size: 50px;;
+        font-size: 50px;
     }
 }
 
@@ -220,12 +221,12 @@ footer {
 }
 
 .main__textbox {
-    width: 540px;
+    // width: 540px;
     height: 60px; 
 }
 
 .form {
-    width: 540px;
+    // width: 540px;
     // height: 474px;
 
     .form__input {
